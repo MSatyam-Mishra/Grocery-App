@@ -39,6 +39,8 @@ dependencies:
   go_router: ^12.1.1
   line_icons: ^2.0.3
   flutter_svg: ^2.0.9
+  models:
+    path: api/packages/models
 
 dev_dependencies:
   flutter_test:
