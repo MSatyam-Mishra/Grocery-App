@@ -7,7 +7,10 @@ environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
+  cat_repo:
+    path: packages/cat_repo
   dart_frog: ^1.0.0
+  
 
 dev_dependencies:
   mocktail: ^1.0.0
