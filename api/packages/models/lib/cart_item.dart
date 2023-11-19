@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:equatable/equatable.dart';
+import 'package:models/product.dart';
 import 'package:uuid/uuid.dart';
 
 class CartItem extends Equatable {
   final String id;
-  final Map<String, dynamic> product;
+  final Product product;
   final int quantity;
   final double subtotal;
 
@@ -17,7 +18,7 @@ class CartItem extends Equatable {
 
   CartItem copyWith({
     String? id,
-    Map<String, dynamic>? product,
+    Product? product,
     int? quantity,
     double? subtotal,
   }) {
@@ -53,23 +54,15 @@ class CartItem extends Equatable {
   static List<CartItem> sampleData = [
     CartItem(
       id: Uuid().v4(),
-      product: {
-        'name': 'Sneakers',
-        'price': 79.99,
-        'image': 'https://source.unsplash.com/random/?shoes',
-      },
+      product: Product.sampleData[0],
       quantity: 2,
-      subtotal: 159.98,
+      subtotal: Product.sampleData[0].price,
     ),
     CartItem(
       id: Uuid().v4(),
-      product: {
-        'name': 'Backpack',
-        'price': 49.99,
-        'image': 'https://source.unsplash.com/random/?backpack',
-      },
+      product: Product.sampleData[1],
       quantity: 1,
-      subtotal: 49.99,
+      subtotal: Product.sampleData[1].price,
     ),
   ];
 }
