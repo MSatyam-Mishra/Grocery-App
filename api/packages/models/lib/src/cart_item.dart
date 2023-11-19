@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:equatable/equatable.dart';
-import 'package:models/product.dart';
+
+import 'package:models/src/product.dart';
 import 'package:uuid/uuid.dart';
 
 class CartItem extends Equatable {
