@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         // primaryColor: ColorScheme.,
         colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFFf15701)),
 
-        useMaterial3: true,
+        useMaterial3: false,
       ),
       routerConfig: AppRouter().router,
       debugShowCheckedModeBanner: false,

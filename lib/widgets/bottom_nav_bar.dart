@@ -17,6 +17,7 @@ class BottomNavBar extends StatelessWidget {
                 .bodySmall!
                 .copyWith(color: blackish))),
         child: NavigationBar(
+          elevation: 20,
           indicatorColor: Colors.transparent,
           selectedIndex: index,
           destinations: [

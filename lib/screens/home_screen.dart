@@ -17,11 +17,10 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: textColorP,
+        elevation: 0,
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(
-            LineIcons.userCircle,
-          ),
+          icon: Icon(LineIcons.userCircle, color: blackish),
         ),
         title: Column(children: [
           Text(
@@ -39,7 +38,10 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                 width: 8,
               ),
-              Icon(Icons.arrow_drop_down_rounded)
+              Icon(
+                Icons.arrow_drop_down_rounded,
+                color: blackish,
+              )
             ],
           )
         ]),
@@ -50,7 +52,10 @@ class HomeScreen extends StatelessWidget {
                   backgroundColor: mainColor,
                   label: Text("2"),
                   isLabelVisible: true,
-                  child: Icon(LineIcons.shoppingCart)))
+                  child: Icon(
+                    LineIcons.shoppingCart,
+                    color: blackish,
+                  )))
         ],
         bottom: PreferredSize(
           child: SearchTextFormField(),
@@ -60,6 +65,7 @@ class HomeScreen extends StatelessWidget {
       bottomNavigationBar: BottomNavBar(
         index: 0,
       ),
+      backgroundColor: textColorP,
     );
   }
 }
